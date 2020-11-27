@@ -15,5 +15,8 @@ $(function() {
 
 	$(window).on('scroll', function(){
 	});
-
+    	$('button.order-link').on('click', function(e){
+    		e.preventDefault();
+    		window.location.href = $('.order-link').val();
+    	});
 });
